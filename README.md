@@ -30,15 +30,16 @@ El objetivo es que este servicio (A) calcule y devuelva la respuesta sin bloquea
 ## Correr
 
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload
-
-
-Probar: http://127.0.0.1:8000/calc/7
-DocsSwagger: http://127.0.0.1:8000/docs
 
 ## Docker
 
 docker build -t servicio-factorial .
+
 docker run --rm -p 8000:8000 servicio-factorial
 
-```bash
+Probar: http://127.0.0.1:8000/calc/7
+DocsSwagger: http://127.0.0.1:8000/docs
+
+
